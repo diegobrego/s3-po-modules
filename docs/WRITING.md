@@ -2,7 +2,7 @@
 
 A module is **one Lua file** in `modules/`. It describes itself in a table at the top (name, version, settings, commands) and has a `check()` function that S3-PO runs on a schedule. S3-PO does the rest: the settings page section, the on/off switch, the channel choice, the help text, the status page, error pushes and quiet hours.
 
-Lua is a small language; if you know a bit of JavaScript or Python you can read it right away. The [Lua 5.4 manual](https://www.lua.org/manual/5.4/) has the details. Start from [`template.lua`](template.lua) and look at the modules in `modules/` for real examples: `zelda.lua` (a web page), `weather.lua` (a JSON API), `waste.lua` (an uploaded file), `nights.lua` (Firestore).
+Lua is a small language; if you know a bit of JavaScript or Python you can read it right away. The [Lua 5.4 manual](https://www.lua.org/manual/5.4/) has the details. Read [`modules/hello.lua`](../modules/hello.lua) first: a small working example that uses every part of the API, with comments. Install it on your S3-PO (`install hello`, then switch it on) to see what it does. Then start from [`template.lua`](template.lua), and look at the other modules for real-world examples: `zelda.lua` (a web page), `weather.lua` (a JSON API), `waste.lua` (an uploaded file), `nights.lua` (Firestore).
 
 ## Try it, publish it
 

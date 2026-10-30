@@ -33,6 +33,16 @@
       "sha256": "f2eac6f996d23100e95b69207418385ee9a16607956e3e4c31ac847964b83327"
     },
     {
+      "key": "hello",
+      "name": "Hello world (example)",
+      "version": "1.0.0",
+      "api": 1,
+      "about": "An example for module writers: a daily greeting, a check counter and a dice command. Sends nothing useful.",
+      "file": "modules/hello.lua",
+      "size": 6267,
+      "sha256": "32636caafce08b0289ed321ec4a40c2bae65bd03900a9fb1ad6a5a67f831c895"
+    },
+    {
       "key": "waste",
       "name": "Waste collection",
       "version": "1.0.0",

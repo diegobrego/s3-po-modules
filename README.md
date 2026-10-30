@@ -12,6 +12,7 @@ Each module is one Lua script. S3-PO lists this catalog on its **Modules** page;
 | **Weather** (`weather`) | Official DWD weather warnings for your place (Germany), the severe ones louder and even in quiet hours, and a morning forecast |
 | **Fuel prices** (`fuel`) | Prices in Germany (Tankerkönig) and Austria (E-Control), with a push when a station drops to your limit |
 | **Zelda concerts** (`zelda`) | A push when the Zelda 40th Anniversary Concert tour adds a date in your countries, and when its tickets change |
+| **Hello world (example)** (`hello`) | For module writers: a daily greeting, a check counter and a dice command, with every part of the API explained in comments. Arrives switched off |
 
 ## Installing a module
 
@@ -25,7 +26,7 @@ Then set it up on the settings page. S3-PO looks for updates daily; depending on
 - `modules/<key>.lua`: the modules.
 - `index.json`: the catalog S3-PO reads. Made by `tools/make_index.py` from the modules (name, version, size, SHA-256). GitHub Actions rebuilds it on every push, so don't edit it by hand.
 - `tools/validate.lua`: checks the modules the way S3-PO loads them. Runs on every push.
-- `docs/WRITING.md`: how to write a module. `docs/template.lua`: a starting point.
+- `docs/WRITING.md`: how to write a module. `modules/hello.lua`: a working example to read first. `docs/template.lua`: an empty starting point.
 
 ## Trust
 
