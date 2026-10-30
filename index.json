@@ -1,0 +1,66 @@
+{
+  "catalog": "S3-PO modules",
+  "about": "Modules for S3-PO, installed from its Modules page or with the command \"install <name>\".",
+  "modules": [
+    {
+      "key": "fuel",
+      "name": "Fuel prices",
+      "version": "1.0.0",
+      "api": 1,
+      "about": "Fuel prices for Germany (Tankerkönig) and Austria (E-Control), with a push when a station drops to your limit.",
+      "file": "modules/fuel.lua",
+      "size": 8532,
+      "sha256": "efc1a2b7c2d99ca08caaa72f15088b5ea04c111fc45d74ecc1f538828557744f"
+    },
+    {
+      "key": "oracle",
+      "name": "Game Night Oracle",
+      "version": "1.0.0",
+      "api": 1,
+      "about": "Keeps score for your Board Game Night group: briefings with S3-PO's odds, winners with streaks, a monthly recap.",
+      "file": "modules/oracle.lua",
+      "size": 19206,
+      "sha256": "1e138a3e767b371d4cff3ad619668818bf87101487dd0516ad25ec3e6c011770"
+    },
+    {
+      "key": "nights",
+      "name": "Game nights",
+      "version": "1.0.0",
+      "api": 1,
+      "about": "A push when a day on your Board Game Night calendar reaches \"Game on\", when it's off again, and a reminder the day before.",
+      "file": "modules/nights.lua",
+      "size": 8303,
+      "sha256": "f2eac6f996d23100e95b69207418385ee9a16607956e3e4c31ac847964b83327"
+    },
+    {
+      "key": "waste",
+      "name": "Waste collection",
+      "version": "1.0.0",
+      "api": 1,
+      "about": "A reminder the evening before a waste pickup, plus notices like recycling centre closures, from an iCal calendar.",
+      "file": "modules/waste.lua",
+      "size": 10190,
+      "sha256": "a9c7bea6f0ff549a79a189a2684cb547c346c15e0c1b53ee0aee0cf3f5c02949"
+    },
+    {
+      "key": "weather",
+      "name": "Weather",
+      "version": "1.0.0",
+      "api": 1,
+      "about": "Official DWD weather warnings for your place (storms louder, even in quiet hours) and a morning forecast. Germany.",
+      "file": "modules/weather.lua",
+      "size": 9421,
+      "sha256": "d79ddfea3b2409e3f3b7c493e7c03a777518018736aae2dfd978a4d83406b85d"
+    },
+    {
+      "key": "zelda",
+      "name": "Zelda concerts",
+      "version": "1.0.0",
+      "api": 1,
+      "about": "A push when the Zelda 40th Anniversary Concert tour adds a date in your countries, and when its tickets change.",
+      "file": "modules/zelda.lua",
+      "size": 8080,
+      "sha256": "5a5407eae1a855dae220cb55ac6088e64f0a0f19c8f32ca1d6f0ac7fdd520802"
+    }
+  ]
+}

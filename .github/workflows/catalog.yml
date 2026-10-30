@@ -1,0 +1,44 @@
+name: Catalog
+
+# On every push: checks the modules, then rebuilds index.json (the catalog S3-PO reads)
+# and commits it when it changed. Pull requests must bring an up-to-date index.json.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Lua 5.4
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lua5.4
+
+      - name: Check the modules
+        run: |
+          for f in modules/*.lua; do luac5.4 -p "$f"; done
+          lua5.4 tools/validate.lua modules/*.lua
+
+      - name: Index is current (pull requests)
+        if: github.event_name == 'pull_request'
+        run: python3 tools/make_index.py --check
+
+      - name: Update index.json
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: |
+          python3 tools/make_index.py
+          if git diff --quiet index.json; then
+            echo "index.json is up to date"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.json
+            git commit -m "Update index.json"
+            git push
+          fi
