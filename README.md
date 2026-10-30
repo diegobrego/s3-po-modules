@@ -19,7 +19,7 @@ Each module is one Lua script. S3-PO lists this catalog on its **Modules** page;
 - On S3-PO's page: **http://s3po.local/modules**, then **Install**.
 - From your phone: send `store` to see what's there, then `install weather`. `modules` lists what you have, `remove weather` takes one out (its settings stay, in case you change your mind).
 
-Then set it up on the settings page. S3-PO looks for updates daily; depending on its settings it tells you (with an **Update** button) or installs them by itself. `update` installs them on request.
+Then set it up with its **Settings** button on the Modules page (a new module opens there by itself). S3-PO looks for updates daily; depending on its settings it tells you (with an **Update** button) or installs them by itself. `update` installs them on request.
 
 ## How it's built
 
