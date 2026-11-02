@@ -110,7 +110,7 @@ Also there: Lua's `string`, `table`, `math`, `utf8` and `coroutine` libraries, a
 
 ## Limits and safety
 
-- **Memory:** each module has its own Lua state with up to 1 MB (in the board's PSRAM). Over that, the check fails with "not enough memory".
+- **Memory:** each module has its own Lua state with up to 2 MB (in the board's PSRAM). Over that, the check fails with "not enough memory".
 - **Time:** a check or command may compute for 20 seconds, not counting network waits. Then it's stopped with an error.
 - **Sandbox:** a module only sees the API above. It can't read files, the Wi-Fi password, the ntfy topics or other modules.
 - **Downloads:** S3-PO fetches the catalog and modules only over HTTPS with checked certificates, and installs a file only if its SHA-256 matches `index.json`.

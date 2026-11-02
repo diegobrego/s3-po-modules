@@ -12,6 +12,7 @@ Each module is one Lua script. S3-PO lists this catalog on its **Modules** page;
 | **Weather** (`weather`) | Official DWD weather warnings for your place (Germany), the severe ones louder and even in quiet hours, and a morning forecast |
 | **Fuel prices** (`fuel`) | Prices in Germany (Tankerkönig) and Austria (E-Control), with a push when a station drops to your limit |
 | **Zelda concerts** (`zelda`) | A push when the Zelda 40th Anniversary Concert tour adds a date in your countries, and when its tickets change |
+| **Nintendo Store stock** (`nstore`) | Watches a product on the Nintendo Store (set up for the Zelda Edition Pro Controller) and pushes, loudly, the moment it can be bought. Also tells you when the store opens a waiting room |
 | **Hello world (example)** (`hello`) | For module writers: a daily greeting, a check counter and a dice command, with every part of the API explained in comments. Arrives switched off |
 
 ## Installing a module

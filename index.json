@@ -43,6 +43,16 @@
       "sha256": "32636caafce08b0289ed321ec4a40c2bae65bd03900a9fb1ad6a5a67f831c895"
     },
     {
+      "key": "nstore",
+      "name": "Nintendo Store stock",
+      "version": "1.0.0",
+      "api": 1,
+      "about": "Watches a product on the Nintendo Store and pushes the moment it can be bought (and when the store opens a waiting room).",
+      "file": "modules/nstore.lua",
+      "size": 6536,
+      "sha256": "2ecab07edc7dc69fa67060f1e9ccd093fbf968aeb7d55ce0b02b2bacaceab21a"
+    },
+    {
       "key": "waste",
       "name": "Waste collection",
       "version": "1.0.0",
