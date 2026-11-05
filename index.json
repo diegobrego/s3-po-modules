@@ -3,6 +3,16 @@
   "about": "Modules for S3-PO, installed from its Modules page or with the command \"install <name>\".",
   "modules": [
     {
+      "key": "crypto",
+      "name": "Crypto price",
+      "version": "1.0.0",
+      "api": 1,
+      "about": "Watches a cryptocurrency (CoinGecko) and pushes when its price rises above or falls below your thresholds, or moves a lot in 24 hours.",
+      "file": "modules/crypto.lua",
+      "size": 7282,
+      "sha256": "aca40cfc61679ebe62081bd03f84b60f4731d80abff4e84d0cabb0eb5579b2b7"
+    },
+    {
       "key": "fuel",
       "name": "Fuel prices",
       "version": "1.0.0",
